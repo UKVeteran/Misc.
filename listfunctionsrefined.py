@@ -24,7 +24,12 @@ c5=dat.min()
 c6=variance(dat.col)
 c7=stdev(dat.col)
 
+
 for col in dat.columns:
     if np.issubdtype(dat[col].dtype, np.number):
-        dat[col].values[1:1642] = c7
+        dat[col].values[1:10] = c7
 dat
+
+dat.truncate(before=1, after=4)
+dat.truncate(before=1640, after=1643)
+

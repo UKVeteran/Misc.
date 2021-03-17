@@ -33,3 +33,10 @@ dat
 dat.truncate(before=1, after=4)
 dat.truncate(before=1640, after=1643)
 
+data = dat.drop(labels=2, axis=0)
+data
+
+dat.drop(range(0,3))
+dat.drop(range(1640,1645))
+
+
